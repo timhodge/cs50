@@ -6,7 +6,7 @@ Create new branch   git branch <branchname>
 
 Move into branch    git checkout <branchname>
 
-Commit changes      git commit -a -m "message"
+Commit changes      git commit -m "message"
 
 Merge changes       git merge <branchname> (branchname is changes you want merged into current branch)
 
