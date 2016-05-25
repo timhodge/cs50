@@ -1,0 +1,15 @@
+Git shortcuts
+
+git status
+
+Create new branch   git branch <branchname>
+
+Move into branch    git checkout <branchname>
+
+Commit changes      git commit -a -m "message"
+
+Merge changes       git merge <branchname> (branchname is changes you want merged into current branch)
+
+Delete branch       git branch -d <branchname>
+
+Push changes to GH  git push origin master
