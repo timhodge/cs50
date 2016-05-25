@@ -1,4 +1,5 @@
 Vignere psuedo code
+2016-05-25
 
 - get a string p to encrypt
 - get a string k to use as key
