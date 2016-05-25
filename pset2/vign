@@ -1,8 +1,12 @@
-Vignere psuedo code
+Vigenere psuedo code
 2016-05-25
 
-- get a string p to encrypt
-- get a string k to use as key
+- via command line argument accept string k to use as key
+    - must contain only alphabetical characters
+    - only one command line argument
+    - otherwise exit return 1
+
+- prompt user for a string p to encrypt
 
 - for each character in p:
 

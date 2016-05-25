@@ -6,6 +6,10 @@ Create new branch   git branch <branchname>
 
 Move into branch    git checkout <branchname>
 
+add files to index  git add .
+
+remove files index  git add -u
+
 Commit changes      git commit -m "message"
 
 Merge changes       git merge <branchname> (branchname is changes you want merged into current branch)
