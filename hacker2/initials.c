@@ -1,9 +1,10 @@
 /*
-    initials.c - CS50 pset2 standard edition
+    initials.c - CS50 pset2 hacker edition
     
     - accept a name as input and print the initials, capitalizing if necessary
+    - remove extraneous spaces
     
-    Tim Hodge - 2016-05-21
+    Tim Hodge - 2016-05-26
  */
  
  #include <stdio.h>
