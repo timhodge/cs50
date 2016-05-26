@@ -12,8 +12,7 @@
  
  int main(void)
  {
-     string name;
-     name = GetString();
+     string name = GetString();
      
      int length = strlen(name), prevChar = 32;
      

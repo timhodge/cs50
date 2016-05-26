@@ -52,7 +52,7 @@ int main(int argc, string argv[])
                 e = ( c + 96 );
             }
         
-            printf("%c", (char) e);
+            printf("%c", e);
         }
         else { // if it is not a letter leave it alone
             printf("%c", message[i]);
