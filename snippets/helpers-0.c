@@ -8,49 +8,45 @@
  */
        
 #include <cs50.h>
-#include <stdio.h>
+//#include <stdio.h> uncomment for debug
 
 #include "helpers.h"
 
 /**
- * Returns true if value is in array of n values, else false.
+ * 
+ * Linear serach returns true if value is in array of n values, else false.
+ * 
+ * Tim Hodge - 2016-05-28
+ * 
  */
 bool search(int value, int values[], int n)
 {
     
-    int target = value;
-    int arrayStart = 0;
-    int arrayEnd = n-1;
-    int arrayMiddle =(arrayStart + arrayEnd) / 2;
+    //printf("Needle: %i\n", value);
     
-    while ( arrayStart <= arrayEnd ) {
-        
-        printf("Target: %i; Start: %i; End: %i; Middle: %i\n", target, arrayStart, arrayEnd, arrayMiddle);
+    //printf("Sorted Haystack: ");
 
-        if ( values[arrayMiddle] == target ) {
+    for ( int i=0; i<n ; i++) {
+        
+        //printf("%i ", values[i]);
+        
+        if ( values[i] == value ) 
             return true;
-        }
-        else if ( values[arrayMiddle] < target ) {
-            arrayStart = arrayMiddle + 1;
-            arrayMiddle = (arrayStart + arrayEnd) / 2;
-        }
-        else if ( values[arrayMiddle] > target ) {
-            arrayEnd = arrayMiddle - 1;
-            arrayMiddle = (arrayStart + arrayEnd) / 2;
-        }
-    
     }
     
     return false;
 }
 
 /**
+ * 
  * Sorts array of n values using bubble sort
+ * 
+ * Tim Hodge - 2016-05-28
  */
 void sort(int values[], int n)
 {
     
-    /*
+    /* uncomment for debug
     printf("\n-- search.c output --\n\n");
     
     printf("Unsorted Haystack: ");
@@ -89,7 +85,7 @@ void sort(int values[], int n)
 
    }
     
-    /*
+    /* uncomment for debug
     printf("Sorted Haystack of %i values in %i moves: ", n, count);
     for ( int k=0; k<n; k++)
         printf("%i ", values[k]);
