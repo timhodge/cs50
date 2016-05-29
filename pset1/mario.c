@@ -21,7 +21,7 @@
 
      for ( int blocks = 2; height >= 1; blocks++, height-- ) {
          
-         for (int i = 0; i < height - 1; i++ )
+         for ( int i = 0; i < height - 1; i++ )
              printf(" ");
 
          for ( int j = 0; j < blocks; j++ )
