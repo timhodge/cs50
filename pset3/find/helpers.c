@@ -13,7 +13,10 @@
 #include "helpers.h"
 
 /**
+ * Search an array for a value using binary search
  * Returns true if value is in array of n values, else false.
+ * 
+ * Tim Hodge = 2016-05-28
  */
 bool search(int value, int values[], int n)
 {
@@ -25,7 +28,7 @@ bool search(int value, int values[], int n)
     
     while ( arrayStart <= arrayEnd ) {
         
-        printf("Target: %i; Start: %i; End: %i; Middle: %i\n", target, arrayStart, arrayEnd, arrayMiddle);
+        //printf("Target: %i; Start: %i; End: %i; Middle: %i\n", target, arrayStart, arrayEnd, arrayMiddle);
 
         if ( values[arrayMiddle] == target ) {
             return true;
@@ -46,6 +49,8 @@ bool search(int value, int values[], int n)
 
 /**
  * Sorts array of n values using bubble sort
+ * 
+ * Tim Hodge - 2015-05-28
  */
 void sort(int values[], int n)
 {
