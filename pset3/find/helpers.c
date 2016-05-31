@@ -27,8 +27,6 @@ bool search(int value, int values[], int n)
     int arrayMiddle =(arrayStart + arrayEnd) / 2;
     
     while ( arrayStart <= arrayEnd ) {
-        
-        //printf("Target: %i; Start: %i; End: %i; Middle: %i\n", target, arrayStart, arrayEnd, arrayMiddle);
 
         if ( values[arrayMiddle] == target ) {
             return true;
@@ -41,7 +39,6 @@ bool search(int value, int values[], int n)
             arrayEnd = arrayMiddle - 1;
             arrayMiddle = (arrayStart + arrayEnd) / 2;
         }
-    
     }
     
     return false;
@@ -54,16 +51,6 @@ bool search(int value, int values[], int n)
  */
 void sort(int values[], int n)
 {
-    
-    /*
-    printf("\n-- search.c output --\n\n");
-    
-    printf("Unsorted Haystack: ");
-    for ( int j=0; j<n; j++)
-        printf("%i ", values[j]);
-    printf("\n\n");
-    */
-    
     int holder, m=0, count=0, didNothing;
     
     for ( ; m<n; m++) {
@@ -89,19 +76,8 @@ void sort(int values[], int n)
             if ( didNothing == n-1 ) {
                 m=n;
             }
-            
         }
-
    }
-    
-    /*
-    printf("Sorted Haystack of %i values in %i moves: ", n, count);
-    for ( int k=0; k<n; k++)
-        printf("%i ", values[k]);
-    printf("\n");
-    
-    printf("\n-- end search.c --\n");
-    */
-    
+   
     return;
 }

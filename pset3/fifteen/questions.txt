@@ -3,7 +3,18 @@ questions.txt
 Computer Science 50
 Problem Set 3
 
-0. TODO
-1. TODO
-2. TODO
-3. TODO
+0. Besides 4 × 4 (which are Game of Fifteen’s dimensions), what other dimensions does the framework allow?
+
+    It allows 3x3 up to 9x9 as defined by DIM_MIN and DIM_MAX
+
+1. With what sort of data structure is the game’s board represented?
+
+    2D array
+
+2. What function is called to greet the player at game’s start?
+
+    greet()
+
+3. What functions do you apparently need to implement?
+
+    init(), draw(), move(), won() (as well as adjust log file output to match check50 expectations)
